@@ -1,11 +1,12 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "讲东讲西";
 ---
 
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,7 +16,6 @@ const pageTitle = "讲东讲西";
 	</head>
 	<body>
     <Navigation />
-    
 		<h1>{pageTitle}</h1>
     <p>广东电台收听中...</p>
     <ul>
@@ -23,5 +23,6 @@ const pageTitle = "讲东讲西";
       <li><a href="/posts/post-2/">文章 2</a></li>
       <li><a href="/posts/post-3/">文章 3</a></li>
     </ul>
+    <Footer />
 	</body>
 </html>
